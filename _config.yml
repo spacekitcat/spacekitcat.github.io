@@ -1,0 +1,15 @@
+theme: jekyll-theme-cayman
+
+title: SPACEKITCAT
+
+author:
+  name: Lisa A. Burton
+  email: spacekitcat+blog@protonmail.com
+  github: spacekitcat
+  twitter: spacekitcat
+
+plugins:
+  - jekyll-gist
+
+markdown: kramdown
+highlighter: rouge
