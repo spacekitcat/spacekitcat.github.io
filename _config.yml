@@ -7,3 +7,6 @@ author:
   email: spacekitcat+blog@protonmail.com
   github: spacekitcat
   twitter: spacekitcat
+
+plugins:
+  - jekyll-gist
