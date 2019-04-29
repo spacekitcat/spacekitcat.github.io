@@ -13,4 +13,4 @@ plugins:
   - jekyll-katex
 
 katex:
-  js_path: '{{ Gem::lib_path }}/assets/js'
+  js_path: '/assets/js'
