@@ -10,3 +10,4 @@ author:
 
 plugins:
   - jekyll-gist
+  - jekyll-katex
