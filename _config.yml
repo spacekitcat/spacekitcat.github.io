@@ -13,3 +13,6 @@ plugins:
 
 katex:
   js_path: '/assets/js'
+
+markdown: kramdown
+highlighter: rouge
