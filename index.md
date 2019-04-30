@@ -2,4 +2,4 @@
 
 - [LZ77]({% link lz77/index.md %}) - An exploration of the LZ77 compression algorithm. I might do some writing around entropy encoders because I'm starting to branch out into things like LZ78 etc.
 - [Shannon entropy]({% link shannon-entropy.md %}) - A quick and dirty Node.js script for calculating the Shannon entropy for a file. This is loosely connected to my exploration of [LZ77]({% link lz77/index.md %})
-- [uk-petition-poller](https://github.com/spacekitcat/uk-petition-poller) - Small Node.js library I hacked together for tracking a specified UK Parliament petition.
+- [uk-petition-poller]({% link uk-petition-poller.md %}) - Small Node.js library I hacked together for tracking a specified UK Parliament petition.
