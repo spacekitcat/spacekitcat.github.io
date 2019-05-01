@@ -13,3 +13,5 @@ plugins:
 
 markdown: kramdown
 highlighter: rouge
+
+google_analytics: true
