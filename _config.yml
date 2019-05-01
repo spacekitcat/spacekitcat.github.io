@@ -1,6 +1,8 @@
-theme: jekyll-theme-cayman
+###########
+# site.title
 
 title: SPACEKITCAT
+subtitle: 'get out of my recreational vehicle, punk'
 
 author:
   name: Lisa A. Burton
@@ -11,8 +13,19 @@ author:
 plugins:
   - jekyll-gist
 
-katex:
-  js_path: '/assets/js'
+nav:
+  - { title: 'Projects', href: '/' }
+
+#########################
+# more settings
 
 markdown: kramdown
 highlighter: rouge
+
+sass:
+  sass_dir: css
+  style: expanded
+
+exclude:
+  - README.md
+  - LICENSE.md

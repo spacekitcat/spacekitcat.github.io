@@ -1,0 +1,43 @@
+/*
+ * css styles go here
+ */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a,
+a:visited {
+  color: #e492dd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#header {
+  display: block;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 2em;
+  padding: 4px;
+}
+#header .big {
+  font-family: 'Faster One', cursive;
+  display: block;
+  letter-spacing: 0.5em;
+  padding: 4px;
+  word-break: break-all;
+  font-size: 48px;
+}
+#header .small {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  display: block;
+  letter-spacing: 0.3em;
+  padding: 4px;
+  word-break: break-all;
+}
+
+#nav {
+  padding: 6px;
+}
