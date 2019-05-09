@@ -1,13 +1,15 @@
-$black: rgb(88, 75, 75);
-$salmon: rgb(255, 180, 180);
-$cooked-salmon: rgb(255, 236, 252);
-$purple-violet: rgb(200, 180, 255);
+$global-background: rgb(255, 236, 252);
+$content-background: white;
+$text-color:  rgb(88, 75, 75);
+$header-title-color: rgb(255, 180, 180);
+$text-block-background-color: rgb(255, 247, 254);
+$text-decoration-color: #f18a8a ;
 
 .global {
-  background-color: $cooked-salmon;
-  color: $black;
+  background-color: $global-background;
+  color: $text-color;
 
-  color: $black;
+  color: $text-color;
   font-family: 'Roboto Mono', monospace;
 
   padding: 25px;
@@ -22,21 +24,21 @@ $purple-violet: rgb(200, 180, 255);
   width: 800px;
 
   a {
-    color: $salmon;
+    color: $header-title-color;
     font-family: 'Press Start 2P', cursive;
     font-size: 56px;
     letter-spacing: 0.125em;
     text-decoration: none;
     
     &:visited {
-      color: $salmon;
+      color: $header-title-color;
       text-decoration: none;
     }
   }
 }
 
 .content {
-  background: white;
+  background: $content-background;
   padding-bottom: 8px;
   padding-top: 8px;
   padding: 12px;
@@ -51,11 +53,11 @@ $purple-violet: rgb(200, 180, 255);
   }
 
   h2 {
-    background-color: rgb(255, 247, 254);
+    background-color: $text-block-background-color;
 
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
-    font-weight: 75;
+    font-style: bold;
     letter-spacing: 0.025em;
     margin: 0;
     padding: 8px;
@@ -63,7 +65,7 @@ $purple-violet: rgb(200, 180, 255);
   }
 
   p {
-    background-color: rgb(255, 247, 254);
+    background-color: $text-block-background-color;
     font-size: 14px;
     letter-spacing: 0.075em;
     margin-bottom: 0;
@@ -75,20 +77,20 @@ $purple-violet: rgb(200, 180, 255);
   }
 
   a {
-    color: $black;
-    text-decoration: none;
+    color: $text-color;
+    text-decoration-line: dotted;
+    text-decoration-color: $text-decoration-color;
     &:visited {
-      color: $salmon;
-      text-decoration: none;
+      color: $text-color;
     }
     &:hover {
-      color: $salmon;
-      text-decoration: underline;
+      color: $text-decoration-color;
+      text-decoration: none;
     }
     &:active {
-      color: $purple-violet;
+      color: $text-decoration-color;
       text-decoration: underline;
-      text-decoration-color: $purple-violet;
+      text-decoration-color: $text-decoration-color;
     }
   }
 }
