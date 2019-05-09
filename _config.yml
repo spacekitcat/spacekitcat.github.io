@@ -1,5 +1,3 @@
-theme: jekyll-theme-cayman
-
 title: SPACEKITCAT
 
 author:
@@ -15,3 +13,6 @@ markdown: kramdown
 highlighter: rouge
 
 google_analytics: true
+
+sass:
+  style: compact

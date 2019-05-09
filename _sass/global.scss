@@ -1,0 +1,101 @@
+$black: rgb(88, 75, 75);
+$salmon: rgb(255, 180, 180);
+$cooked-salmon: rgb(255, 236, 252);
+$purple-violet: rgb(200, 180, 255);
+
+.global {
+  background-color: $cooked-salmon;
+  color: $black;
+
+  color: $black;
+  font-family: 'Roboto Mono', monospace;
+
+  padding: 25px;
+  margin: 25px;
+}
+
+.header {
+  padding: 12px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  width: 800px;
+
+  a {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 56px;
+    letter-spacing: 0.125em;
+    text-decoration: none;
+    
+    &:visited {
+      color: $salmon;
+      text-decoration: none;
+    }
+  }
+}
+
+.content {
+  background: white;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding: 12px;
+  width: 800px;
+
+  h1 {
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 36px;
+    letter-spacing: 0.33em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    background-color: rgb(255, 247, 254);
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    font-weight: 75;
+    letter-spacing: 0.025em;
+    margin: 0;
+    padding: 8px;
+    padding-bottom: 0;
+  }
+
+  p {
+    background-color: rgb(255, 247, 254);
+    font-size: 14px;
+    letter-spacing: 0.075em;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 8px;
+  }
+
+  a {
+    text-decoration: none;
+    &:visited {
+      color: $black;
+      text-decoration: none;
+    }
+     &:hover {
+      color: $salmon;
+      text-decoration: underline;
+    }
+    &:active {
+      color: $purple-violet;
+      text-decoration: underline;
+      text-decoration-color: $purple-violet;
+    }
+  }
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.content-header {
+  padding: 0;
+  margin: 0;
+}
