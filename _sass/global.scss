@@ -25,13 +25,13 @@ $text-decoration-color: #f18a8a;
   height: 68px;
 
   a {
-    animation: 2s slidein linear;
+    animation: 0.5s slidein linear;
     @keyframes slidein {
       0% {
-        bottom: -200px;
+        opacity: 0;
       }
       100% {
-        bottom: 0px;
+        opacity: 1;
       }
     }
     color: $header-title-color;
