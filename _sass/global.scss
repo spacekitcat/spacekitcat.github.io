@@ -1,9 +1,9 @@
 $global-background: rgb(255, 236, 252);
 $content-background: white;
-$text-color:  rgb(88, 75, 75);
+$text-color: rgb(88, 75, 75);
 $header-title-color: rgb(255, 180, 180);
 $text-block-background-color: rgb(255, 247, 254);
-$text-decoration-color: #f18a8a ;
+$text-decoration-color: #f18a8a;
 
 .global {
   background-color: $global-background;
@@ -22,14 +22,24 @@ $text-decoration-color: #f18a8a ;
   margin-bottom: 25px;
   text-align: center;
   width: 800px;
+  height: 68px;
 
   a {
+    animation: 2s slidein linear;
+    @keyframes slidein {
+      0% {
+        bottom: -200px;
+      }
+      100% {
+        bottom: 0px;
+      }
+    }
     color: $header-title-color;
     font-family: 'Press Start 2P', cursive;
     font-size: 56px;
     letter-spacing: 0.125em;
     text-decoration: none;
-    
+
     &:visited {
       color: $header-title-color;
       text-decoration: none;
@@ -70,10 +80,10 @@ $text-decoration-color: #f18a8a ;
     letter-spacing: 0.075em;
     margin-bottom: 0;
     margin-top: 0;
-    padding: 0;
     padding-bottom: 8px;
     padding-top: 8px;
     padding-left: 8px;
+    padding-right: 8px;
   }
 
   a {
