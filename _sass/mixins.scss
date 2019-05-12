@@ -1,5 +1,16 @@
+$small-start-breakpoint: 400px;
+$medium-start-breakpoint: 600px;
+$large-start-breakpoint: 1008px;
+
 @mixin content-wrap {
-  margin: auto;
-  padding: 16px;
-  width: 1008px;
+  @media screen and (min-width: $medium-start-breakpoint) {
+    box-sizing: content-box;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $large-start-breakpoint) {
+    margin: auto;
+    padding: 16px;
+    width: 1008px;
+  }
 }

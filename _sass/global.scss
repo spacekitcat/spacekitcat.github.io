@@ -25,8 +25,11 @@ $text-decoration-color: #f18a8a;
   padding-bottom: 25px;
   margin-bottom: 25px;
   text-align: center;
-  width: 800px;
-  height: 68px;
+
+  height: 8px;
+  @media screen and (min-width: $large-start-breakpoint) {
+    height: 68px;
+  }
 
   a {
     animation: 0.5s slidein linear;
@@ -40,7 +43,16 @@ $text-decoration-color: #f18a8a;
     }
     color: $header-title-color;
     font-family: 'Press Start 2P', cursive;
-    font-size: 56px;
+
+    font-size: 18px;
+    @media screen and (min-width: $medium-start-breakpoint) {
+      font-size: 38px;
+    }
+
+    @media screen and (min-width: $large-start-breakpoint) {
+      font-size: 56px;
+    }
+
     letter-spacing: 0.125em;
     text-decoration: none;
 
@@ -69,7 +81,7 @@ $text-decoration-color: #f18a8a;
   padding: 32px;
   padding-bottom: 8px;
   padding-top: 8px;
-  
+
   h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
