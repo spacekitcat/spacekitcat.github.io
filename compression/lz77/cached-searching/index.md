@@ -1,4 +1,7 @@
-# LZ77 Cached dictionary
+---
+title: LZ77 Cached dictionary
+layout: default
+---
 
 This page is a work in progress, I'm filling it in a wee bit at a time.
 

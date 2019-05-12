@@ -1,5 +1,7 @@
-# LZ77
-
+---
+title: LZ77 compression algorithm
+layout: default
+---
 Compression algorithms generally work by defining a reversible function that reduces the redundancy of its input.
 
 

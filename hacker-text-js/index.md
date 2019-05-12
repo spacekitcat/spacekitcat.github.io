@@ -1,5 +1,7 @@
-# Hacker Text JS
-
+---
+title: Hacker text Javascript library
+layout: default
+---
 Matrix-esque animations with plain text, CSS and client side JS.
 
 ## Demo (iframe)
