@@ -66,10 +66,10 @@ $text-decoration-color: #f18a8a;
 
 .content {
   background: $content-background;
+  padding: 32px;
   padding-bottom: 8px;
   padding-top: 8px;
-  padding: 12px;
-
+  
   h2 {
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
@@ -87,7 +87,7 @@ $text-decoration-color: #f18a8a;
 
   p {
     font-size: 14px;
-    letter-spacing: 0.075em;
+    letter-spacing: 0.05em;
     margin-bottom: 0;
     margin-top: 0;
     padding-bottom: 8px;
@@ -126,4 +126,9 @@ $text-decoration-color: #f18a8a;
 
 footer {
   @include content-wrap;
+
+  img {
+    max-height: 64px;
+    max-width: 64px;
+  }
 }
