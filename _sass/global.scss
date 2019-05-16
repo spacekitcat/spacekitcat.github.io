@@ -61,7 +61,6 @@ $text-decoration-color: #f18a8a;
 .content-wrapper {
   @include content-wrap;
   background-color: $content-wrapper-background;
-  margin: 8px;
 
   h1 {
     font-family: 'Swanky and Moo Moo', cursive;
@@ -74,7 +73,6 @@ $text-decoration-color: #f18a8a;
 
 .content {
   background: $content-background;
-  padding: 32px;
   padding-bottom: 8px;
   padding-top: 8px;
 

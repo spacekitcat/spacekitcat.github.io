@@ -3,9 +3,12 @@ $medium-start-breakpoint: 600px;
 $large-start-breakpoint: 1008px;
 
 @mixin content-wrap {
+  margin-left: 8px;
+
   @media screen and (min-width: $medium-start-breakpoint) {
-    box-sizing: content-box;
-    width: 100%;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 16px;
   }
 
   @media screen and (min-width: $large-start-breakpoint) {
