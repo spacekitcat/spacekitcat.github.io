@@ -1,6 +1,6 @@
 $small-start-breakpoint: 400px;
 $medium-start-breakpoint: 600px;
-$large-start-breakpoint: 1008px;
+$large-start-breakpoint: 1080px;
 
 @mixin content-wrap {
   margin-left: 8px;
@@ -14,6 +14,6 @@ $large-start-breakpoint: 1008px;
   @media screen and (min-width: $large-start-breakpoint) {
     margin: auto;
     padding: 16px;
-    width: 1008px;
+    width: 1080px;
   }
 }
