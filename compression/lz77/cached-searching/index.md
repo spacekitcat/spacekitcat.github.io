@@ -10,7 +10,7 @@ Whatever structure you use to speed up searches has to:
   
 - Have the ability to calculate the offset of a prefix right now (not when it was recorded).
 - Be able to determine if the value still exists within the sliding window (otherwise you create problems for the decompression process)
-- Respect the append and delete order of the sliding window (first in, last out queue structure)
+- Respect the read order and age ordering of the bytes (always read the lookahead from 0 up; organise the look back, oldest to newest)
 
 The first diagram illustrates the general idea behind using a cached dictionary as well as the high level implementation of [`lz77-nodejs-streams`](https://github.com/spacekitcat/lz77-nodejs-streams).
 

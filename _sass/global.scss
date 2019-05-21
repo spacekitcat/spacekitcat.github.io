@@ -6,11 +6,10 @@ $content-background: white;
 $text-color: rgb(88, 75, 75);
 $header-title-color: rgb(255, 180, 180);
 $text-decoration-color: #f18a8a;
-
 .global {
-  background-color: $global-background;
   color: $text-color;
   font-family: 'Roboto Mono', monospace;
+  background-color: $global-background;
 }
 
 .header {
@@ -27,12 +26,27 @@ $text-decoration-color: #f18a8a;
   }
 
   a {
-    animation: 0.5s slidein linear;
+    animation: 1s slidein linear;
     @keyframes slidein {
       0% {
+        color: rgb(103, 199, 255);
         opacity: 0;
       }
+      1% {
+        color: rgb(103, 199, 255);
+        opacity: 0;
+      }
+      49% {
+        color: rgb(103, 199, 255);
+      }
+      50% {
+        color: rgb(255, 255, 255);
+      }
+      51% {
+        color: rgb(255, 255, 255);
+      }
       100% {
+        color: rgb(255, 255, 255);
         opacity: 1;
       }
     }
