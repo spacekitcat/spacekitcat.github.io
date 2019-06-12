@@ -1,68 +1,47 @@
 @import 'mixins';
 
-$global-background: rgb(255, 236, 252);
-$content-wrapper-background: rgb(255, 247, 254);
+$global-background: rgb(255, 253, 151);
+$content-wrapper-background: rgb(255, 255, 255);
 $content-background: white;
 $text-color: rgb(88, 75, 75);
-$header-title-color: rgb(255, 180, 180);
-$text-decoration-color: #f18a8a;
+
+$header-title-color: rgb(255, 255, 255);
+$text-decoration-color: #d1d1d1;
 .global {
   color: $text-color;
   font-family: 'Roboto Mono', monospace;
   background-color: $global-background;
+  background-image: url("/assets/images/texture.jpg");
 }
 
 .header {
-  @include content-wrap;
-
-  padding: 12px;
-  padding-bottom: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 75px;
+  margin-top: 75px;
   text-align: center;
 
-  height: 8px;
-  @media screen and (min-width: $large-start-breakpoint) {
-    height: 68px;
-  }
-
-  a {
-    animation: 1s slidein linear;
+  &__title {
+    animation: 0.25s slidein linear;
     @keyframes slidein {
-      0% {
-        color: rgb(103, 199, 255);
-        opacity: 0;
-      }
-      1% {
-        color: rgb(103, 199, 255);
-        opacity: 0;
-      }
-      49% {
-        color: rgb(103, 199, 255);
-      }
-      50% {
-        color: rgb(255, 255, 255);
-      }
-      51% {
-        color: rgb(255, 255, 255);
-      }
-      100% {
-        color: rgb(255, 255, 255);
-        opacity: 1;
+      @for $i from 1 through 16 {
+        0% {
+          letter-spacing: 0.5em;
+        }
       }
     }
-    color: $header-title-color;
-    font-family: 'Press Start 2P', cursive;
 
-    font-size: 18px;
+    color: $header-title-color;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 42px;
+    letter-spacing: 0em;
     @media screen and (min-width: $medium-start-breakpoint) {
-      font-size: 38px;
+      font-size: 56px;
+      letter-spacing: 0.125em;
     }
 
     @media screen and (min-width: $large-start-breakpoint) {
-      font-size: 56px;
+      font-size: 72px;
     }
 
-    letter-spacing: 0.125em;
     text-decoration: none;
 
     &:visited {
@@ -74,24 +53,39 @@ $text-decoration-color: #f18a8a;
 
 .content-wrapper {
   @include content-wrap;
-  background-color: $content-wrapper-background;
+  background-image: url("/assets/images/texture2.jpg");
+  padding: 8px;
 
   h1 {
-    font-family: 'Swanky and Moo Moo', cursive;
-    font-size: 36px;
+    font-family: 'Bungee Shade', cursive;
+
     letter-spacing: 0.33em;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
+    color: rgb(63, 128, 79);
+    padding-right: 0px;
+    font-size: 32px;
+    letter-spacing: 0em;
+    @media screen and (min-width: $medium-start-breakpoint) {
+      font-size: 48px;
+      letter-spacing: 0.125em;
+      padding-right: 32px;
+    }
   }
+
+  margin-left: 0px;
 }
 
 .content {
   background: $content-background;
-  padding-bottom: 8px;
-  padding-top: 8px;
+  padding: 8px;
+
+  @media screen and (min-width: $medium-start-breakpoint) {
+    padding: 32px;
+  }
 
   h2 {
-    font-family: 'Roboto Mono', monospace;
+
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.03em;
