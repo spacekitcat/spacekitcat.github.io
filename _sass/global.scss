@@ -1,15 +1,13 @@
 @import 'mixins';
 
 $global-background: rgb(255, 253, 151);
-$content-wrapper-background: rgb(255, 255, 255);
 $content-background: white;
 $text-color: rgb(88, 75, 75);
-
-$header-title-color: rgb(255, 255, 255);
+$header-title-color: rgb(63, 128, 79);
 $text-decoration-color: #d1d1d1;
 .global {
   color: $text-color;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Robto Mono', monospace;
   background-color: $global-background;
   background-image: url("/assets/images/texture.jpg");
 }
@@ -62,10 +60,11 @@ $text-decoration-color: #d1d1d1;
     letter-spacing: 0.33em;
     text-align: left;
     text-transform: uppercase;
-    color: rgb(63, 128, 79);
+    color: $header-title-color;
     padding-right: 0px;
     font-size: 32px;
     letter-spacing: 0em;
+    margin-top: 0;
     @media screen and (min-width: $medium-start-breakpoint) {
       font-size: 48px;
       letter-spacing: 0.125em;

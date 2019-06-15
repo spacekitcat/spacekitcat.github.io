@@ -5,7 +5,7 @@ layout: default
 Compression algorithms are designed to reduce the storage requirements of a given block of data, which they achieve by identifying repeating sequences of bytes and re-encoding them with less redundancy. The compression function should work in a way that is reversible by a decompression algorithm.
 
 
-The [LZ77 compression algorithm](https://en.wikipedia.org/wiki/LZ77_and_LZ78) reduces the redundancy of its input by identifying repeated prefix strings and replacing them with pointers to blocks within a byte buffer, usually known as a sliding window. The prefix pointers are encoded in a way that's context dependant, so for each compression packet (describing a token and a prefix pointer), the state of the window during compression and decompression must be the same. The Sliding Window ensures it's integrity by observing the following rules:
+The [LZ77 compression algorithm](https://en.wikipedia.org/wiki/LZ77_and_LZ78) reduces the redundancy of its input by identifying repeated prefix strings and replacing them with pointers to blocks within a byte buffer, usually known as a sliding window. The prefix pointers are encoded in a way that's context dependant, so for each compression packet (describing a token and a prefix pointer), the state of the window during compression and decompression must be the same. The Sliding Window ensures its integrity by observing the following rules:
 
 - Only the token value gets appended to the sliding window.
 - Every generated packet has a token.
