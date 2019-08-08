@@ -113,6 +113,7 @@ $text-decoration-color: #d1d1d1;
     color: $text-color;
     text-decoration-line: dotted;
     text-decoration-color: $text-decoration-color;
+    word-break: break-all;
     &:visited {
       color: $text-color;
     }
