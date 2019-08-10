@@ -2,19 +2,24 @@
 title: Side projects
 layout: default
 ---
+## [6502 assembly]({% link 6502/index.md %})
+{:.project-list__title}
+Notes on 6502 assembly.
+{:.project-list__body}
+
 ## [LZ77]({% link compression/lz77/index.md %})
 {:.project-list__title}
-An exploration of the LZ77 compression algorithm. I might do some writing around entropy encoders because I'm starting to branch out into things like LZ78 etc.
+Notes on the LZ77 compression algorithm.
 {:.project-list__body}
 
 ## [Shannon entropy]({% link entropy/shannon/index.md %})
 {:.project-list__title}
-A quick and dirty Node.js script for calculating the Shannon entropy for a file. This is loosely connected to my exploration of [LZ77]({% link compression/lz77/index.md %})
+A hacky Node.js script for calculating the Shannon entropy for a file.
 {:.project-list__body}
 
 ## [UK petition poller]({% link uk-petition-poller/index.md %})
 {:.project-list__title}
-Small Node.js library I hacked together for tracking a specified UK Parliament petition.
+A hacky Node.js module for polling the UK Government petition site.
 {:.project-list__body}
 
 ## [HackerTextJS]({% link hacker-text-js/index.md %})
