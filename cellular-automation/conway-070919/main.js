@@ -8,7 +8,7 @@ createGridCellElement = function(label) {
 
 initCellRecords = function(grid) {
   const gridWidth = 70;
-  const gridHeight = 70;
+  const gridHeight = 50;
 
   const cells = [];
 
