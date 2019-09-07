@@ -82,7 +82,6 @@ getNeighboursCount = function(cells, x, y) {
 updateCells = function(cells) {
   for (let y = 0; y < cells.length; ++y) {
     for (let x = 0; x < cells[y].length; ++x) {
-      console.log(getNeighboursCount(cells, x, y));
       if (getNeighboursCount(cells, x, y) < 2) {
         cells[y][x].alive = false;
         continue;
