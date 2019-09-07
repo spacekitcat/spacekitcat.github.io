@@ -131,5 +131,5 @@ window.onload = function() {
     renderCells(cells);
   };
 
-  window.setInterval(callback, 500);
+  window.setInterval(callback, 1000);
 };
