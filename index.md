@@ -22,7 +22,7 @@ A hacky Node.js script for calculating the Shannon entropy for a file.
 A hacky Node.js module for polling the UK Government petition site.
 {:.project-list__body}
 
-## [HackerTextJS]({% link hacker-text-js/index.md %})
+## [HackerTextJS]({% link hacker-text-js/index.html %})
 {:.project-list__title--even}
 Matrix-esque animations with plain text, CSS and client side JS.
 {:.project-list__body}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset=UTF-8>
+      <title>HackerTextJS</title>
+      <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet"/>
+       <script type="text/javascript">
+          var hacker_text_config =
+          {
+            targets: [{
+            htmlId: "hackertext",
+            text: "HA",
+            framerate: 5,
+            rows: 15
+          },
+          {
+            htmlId: "hackertexttwo",
+            text: "HA",
+            renderer: {
+              strategy: "CoSinePhaseFrameRenderStrategy"
+            },
+            framerate: 5,
+            rows: 15
+          },
+          {
+            htmlId: "hackertextthree",
+            text: "HA",
+            framerate: 5,
+            rows: 15
+          }]};
+      </script>
+      <script
+        src="http://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous">
+      </script>
+      <script type="text/javascript" src="./hackertext.js">
+      </script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-100780253-1"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-100780253-1');
+      </script>
+    </head>
+  <body>
+    <div class="content-wrap" id="#content-wrap">
+      <h2 id="title" class="title">HA HA HA</h2>
+      <div class="hackertext" id="hackertext"></div>
+      <div class="hackertext" id="hackertexttwo"></div>
+      <div class="hackertext" id="hackertextthree"></div>
+    </div>
+  </body>
+</html>
