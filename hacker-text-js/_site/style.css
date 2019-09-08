@@ -1,0 +1,65 @@
+body {
+  background: rgb(92, 92, 92);
+}
+
+.content-wrap {
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 320px;
+}
+
+@media(min-width: 400px) {
+  .title {
+    width: 340px;
+  }
+  .content-wrap {
+    width: 340px;
+  }
+}
+
+@media(min-width: 700px) {
+  .title {
+    width: 640px;
+  }
+  .content-wrap {
+    width: 640px;
+  }
+}
+
+@media(min-width: 1300px) {
+  .title {
+    width: 1280px;
+  }
+  .content-wrap {
+    width: 1280px;
+  }
+}
+
+@keyframes bounce {
+  0% { color: white; letter-spacing: 2px; font-size: 32px; transform: rotate(360deg); }
+  25% { color: rgb(255, 180, 236); font-size: 72px; }
+  75% { color: rgb(47, 167, 214); font-size: 72px; }
+  100% { color: white; font-size: 32px; transform: rotate(0deg); }
+}
+
+.title {
+  animation: bounce 5s infinite linear;
+  color: rgb(255, 255, 255);
+  font-family: 'Bangers', cursive;
+  letter-spacing: 2px;
+  font-size: 72px;
+  position: absolute;
+  display: float;
+  padding-top: 500px;
+  text-align: center;
+}
+
+.hackertext { 
+  color: rgb(255, 255, 6);
+  word-wrap: break-word;
+  font-family: Monospace;
+  font-size: 16px;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
