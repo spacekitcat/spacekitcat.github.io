@@ -3,21 +3,10 @@ body {
 }
 
 .content-wrap {
+  box-sizing: content-box;
   margin: 0 auto;
   margin-top: 60px;
-  width: 320px;
-}
-
-@media screen and (min-width: 400px and max-width 700px) {
-  .content-wrap {
-    width: 340px;
-  }
-}
-
-@media screen and (min-width: 701px and max-width 1300px) {
-  .content-wrap {
-    width: 640px;
-  }
+  width: 90%;
 }
 
 @media screen and (min-width: 1301px) {
@@ -26,15 +15,7 @@ body {
   }
 }
 
-@keyframes bounce {
-  0% { color: white; letter-spacing: 2px; font-size: 32px; transform: rotate(360deg); }
-  25% { color: rgb(255, 180, 236); font-size: 72px; }
-  75% { color: rgb(47, 167, 214); font-size: 72px; }
-  100% { color: white; font-size: 32px; transform: rotate(0deg); }
-}
-
 .title {
-  animation: bounce 5s infinite linear;
   color: rgb(255, 255, 255);
   font-family: 'Bangers', cursive;
   letter-spacing: 2px;
@@ -42,6 +23,10 @@ body {
   position: absolute;
   display: float;
   padding-top: 500px;
+  margin: 0 auto;
+}
+
+.title h2 {
   text-align: center;
 }
 
@@ -51,6 +36,5 @@ body {
   font-family: Monospace;
   font-size: 16px;
   padding: 0px;
-  margin: 0px;
   width: 100%;
 }

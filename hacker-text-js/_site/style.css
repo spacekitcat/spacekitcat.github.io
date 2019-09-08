@@ -3,6 +3,7 @@ body {
 }
 
 .content-wrap {
+  box-sizing: content-box;
   margin: 0 auto;
   margin-top: 60px;
   width: 320px;
