@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset=UTF-8>
+      <title>DA!</title>
+      <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet"/>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-100780253-1"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-100780253-1');
+      </script>
+    </head>
+  <body>
+    <div id="navigator" />
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel" src="navigator.js"></script>
+  </body>
+</html>

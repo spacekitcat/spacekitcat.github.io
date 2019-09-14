@@ -1,0 +1,65 @@
+body {
+  background: rgb(255, 50, 50);
+}
+
+.title {
+  color: white;
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 64px;
+  margin: 0 auto;
+  margin-top: 90px;
+  width: 320px;
+}
+
+.grid {
+  display: grid;
+  grid-auto-rows: 2px;
+  grid-auto-columns: 2px;
+  grid-template-columns: repeat(70, 1fr);
+  grid-gap:0px;
+  margin: 0 auto;
+  
+  width: 320px;
+  grid-auto-rows: 3px;
+  grid-auto-columns: 3px;
+}
+
+@media(min-width: 400px) {
+  .title {
+    width: 340px;
+  }
+  .grid {
+    width: 340px;
+  }
+}
+
+@media(min-width: 700px) {
+  .title {
+    width: 640px;
+  }
+  .grid {
+    grid-auto-rows: 5px;
+    grid-auto-columns: 5px;
+    width: 640px;
+  }
+}
+
+@media(min-width: 1300px) {
+  .title {
+    width: 1280px;
+  }
+  .grid {
+    width: 1280px;
+    grid-auto-rows: 8px;
+    grid-auto-columns: 8px;
+  }
+}
+
+.grid__cell--alive {
+  background: white;
+}
+
+
+.grid__cell--dead {
+  background: rgb(255, 65, 65);
+}
