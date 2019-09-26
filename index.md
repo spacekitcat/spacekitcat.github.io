@@ -13,22 +13,12 @@ Experiments with cellular automation.
 Notes on 6502 assembly.
 {:.project-list__body}
 
-## [LZ77]({% link compression/lz77/index.md %})
+## [Compression]({% link compression/index.md %})
 {:.project-list__title}
-Notes on the LZ77 compression algorithm.
+Exploration of various compression and information theory algorithms.
 {:.project-list__body}
 
-## [Shannon entropy]({% link entropy/shannon/index.md %})
+## [Modules]({% link modules/index.md %})
 {:.project-list__title}
-A hacky Node.js script for calculating the Shannon entropy for a file.
-{:.project-list__body}
-
-## [UK petition poller]({% link uk-petition-poller/index.md %})
-{:.project-list__title}
-A hacky Node.js module for polling the UK Government petition site.
-{:.project-list__body}
-
-## [HackerTextJS](https://spacekitcat.github.io/hackertextjs/demosite/index.html)
-{:.project-list__title--even}
-Matrix-esque animations with plain text, CSS and client side JS.
+Various reusable modules and libraries.
 {:.project-list__body}
