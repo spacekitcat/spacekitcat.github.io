@@ -17,7 +17,7 @@ A hacky Node.js script for calculating the Shannon entropy for a file.
 A toy implementation of the Huffman coding algorithm for optimal prefix codes.
 {:.project-list__body}
 
-## [Huffman code (experiment: 2019SEP27)](https://github.com/spacekitcat/shannon-fano-code-2019SEP27)
+## [Shannon-Fano code (experiment: 2019SEP27)](https://github.com/spacekitcat/shannon-fano-code-2019SEP27)
 {:.project-list__title--even}
 A toy implementation of the Shannon-Fano coding algorithm for nonoptimal prefix codes.
 {:.project-list__body}
